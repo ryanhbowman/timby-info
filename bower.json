@@ -1,0 +1,23 @@
+{
+  "name": "Jekyll Sass",
+  "version": "0.0.1",
+  "authors": [
+    "Ryan Bowman <ryan@circle.co.ke>"
+  ],
+  "description": "Bower stuff for Jekyll",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "neat": "~1.6.0",
+    "bourbon": "~4.0.2",
+    "slick": "*",
+    "jquery": "~2.1.1",
+    "font-awesome": "~4.2.0"
+  }
+}

@@ -1,0 +1,38 @@
+#site-wrapper
+  position: relative
+  overflow: hidden
+  width: 100%
+  min-height: 1000px
+
+#site-canvas
+  width: 100%
+  height: 100%
+  position: relative
+  @include transform(translateX(0))
+  @include transition(.2s ease all)
+  border-top: 5px solid $black
+
+#site-menu
+  width: $menu-width
+  height: 100%
+  position: absolute
+  top: 0
+  left: -$menu-width
+  padding: 15px
+  background: $yellow
+
+#site-wrapper.show-nav #site-canvas
+  @include transform(translateX($menu-width))
+
+@media all and (min-width: $break-medium)
+  #site-menu
+    width: 100%
+    height: auto
+    position: relative
+    top: 0
+    left: 0
+    background: none
+    h2
+      display: none
+  .toggle-nav
+    display: none

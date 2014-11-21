@@ -1,0 +1,37 @@
+.pull-left
+  float: left
+.pull-right
+  float: right
+.clearfix
+  @include clearfix
+a, a:link, a:visited
+  text-decoration: none
+  color: inherit
+
+@media all and (min-width: $break-big)
+  .hide-big
+    display: none
+
+@media all and (min-width: $break-medium)
+  .hide-medium
+    display: none
+
+.hide-small
+  display: none
+
+.text-center
+  text-align: center
+
+.space-group
+  margin-bottom: 1.5em 
+
+%vertical-align
+  position: relative
+  top: 50%
+  -webkit-transform: translateY(-50%)
+  -ms-transform: translateY(-50%)
+  transform: translateY(-50%)
+
+figure
+  img
+    width: 100%
