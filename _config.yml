@@ -1,8 +1,7 @@
 # Site settings
 title: Timby 
 email: ryan@circle.co.ke
-description: > # this means to ignore newlines until "baseurl:"
-  This is a basic Jekyll install with some nice little sass things inside.
+description: Timby
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: circlekenya
