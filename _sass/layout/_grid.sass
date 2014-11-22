@@ -2,6 +2,12 @@
   max-width: 75em
   margin: 0 auto
   padding: 0 2em
+.columns.padded
+  padding: 0 1em
+@media all and (min-width: $break-medium)
+  .columns.padded
+    padding: 0 3em
+.columns
 @media all and (min-width: $break-medium)
   .one
     @include span-columns(1)
