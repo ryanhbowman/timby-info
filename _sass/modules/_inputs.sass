@@ -25,9 +25,15 @@ input[type="text"], input[type="search"], input[type="date"], input[type="passwo
 .input-with-button__input, .input-with-button__button
   float: left
 .input-with-button__button
-  width: 30%
+  width: 40%
 .input-with-button__input
-  width: 70%
+  width: 60%
+@media all and (min-width: $break-medium)
+  .input-with-button__button
+    width: 30%
+  .input-with-button__input
+    width: 70%
+
 
 .filters, .l-group, .results, .filters-area
   input[type="text"], input[type="search"], input[type="date"], input[type="password"], select
