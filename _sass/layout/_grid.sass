@@ -1,9 +1,39 @@
 .limit
   max-width: 68em
   margin: 0 auto
-  padding: 0 2em
+  padding: 0 1.5em
 .columns.padded
   padding: 0 1em
+.one.preserve
+  @include span-columns(1)
+.two.preserve
+  @include span-columns(2)
+.three.preserve
+  @include span-columns(3)
+.four.preserve
+  @include span-columns(4)
+.five.preserve
+  @include span-columns(5)
+.six.preserve
+  @include span-columns(6)
+.seven.preserve
+  @include span-columns(7)
+.eight.preserve
+  @include span-columns(8)
+.nine.preserve
+  @include span-columns(9)
+.ten.preserve
+  @include span-columns(10)
+.eleven.preserve
+  @include span-columns(11)
+.twelve.preserve
+  @include span-columns(12)
+.shift-one.preserve
+  @include shift(1)
+.shift-two.preserve
+  @include shift(2)
+.shift-three.preserve
+  @include shift(3)
 @media all and (min-width: $break-medium)
   .columns.padded
     padding: 0 3em

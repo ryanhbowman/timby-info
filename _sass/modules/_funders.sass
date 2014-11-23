@@ -6,11 +6,19 @@
   color: white
   font-family: apercu-bold, helvetica, sans-serif
   float: left
-  width: 15%
 .funder-logos
   background: white
   padding: 1em
   float: left
-  width: 85%
+  width: 100%
 .funder-logo
-  @include span-columns(1 of 6)
+  @include span-columns(1 of 3)
+@media all and (min-width: $break-medium)
+  .funder-label
+    width: 15%
+    span
+      display: block
+  .funder-logos
+    width: 85%
+  .funder-logo
+    @include span-columns(1 of 6)

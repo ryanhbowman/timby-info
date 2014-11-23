@@ -1,6 +1,7 @@
 $( document ).ready(function() {
   $('#menu_control').click(function(event) {
       $('.mobile-menu').toggleClass('active-menu');
+      $('#menu_control').toggleClass('active');
   });
 });
 $(window).scroll(function(event) {
