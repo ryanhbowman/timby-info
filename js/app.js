@@ -1,39 +1,19 @@
 $( document ).ready(function() {
-  /* Slick carousel call
-  $('.one-time').slick({
-    dots: true,
-    infinite: true,
-    speed: 300,
-    slidesToShow: 1,
-    adaptiveHeight: true
-  });*/
-
-
-  $(function() {
-      $('.toggle-nav').click(function() {
-          // Calling a function in case you want to expand upon this.
-          toggleNav();
-      });
-  });
-
-
- 
-});
-
-$( window ).resize(function() {
   
 });
+$(window).scroll(function(event) {
+  $scrolled = $(window).scrollTop();
 
-
- /*========================================
-  =            CUSTOM FUNCTIONS            =
-  ========================================*/
-  function toggleNav() {
-      if ($('#site-wrapper').hasClass('show-nav')) {
-          // Do things on Nav Close
-          $('#site-wrapper').removeClass('show-nav');
-      } else {
-          // Do things on Nav Open
-          $('#site-wrapper').addClass('show-nav');
-      }
+  // if scrolled past main header, show the little header
+  if ($scrolled > 140) {
+    $('.header').addClass('is-active');
+    // $('.glasses-grid').addClass('fixed')
   }
+  //otherwise dont show that stuff
+  else  {
+    $('.header').removeClass('is-active'); 
+  }
+});
+$( window ).resize(function() {
+
+});

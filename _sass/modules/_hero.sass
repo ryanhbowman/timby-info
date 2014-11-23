@@ -4,22 +4,28 @@
     color: white
   p
     color: rgba(255,255,255,.8)
-  @include span-columns(8)
-  @include shift(2)
+  @include span-columns(10 16)
+  @include shift(3 16)
 
 .hero
   background: $green
-  min-height: 600px
+  // min-height: 600px
   max-height: 700px
   overflow: hidden
+  position: relative
+
 .hero-container
   position: relative
-  .row
+  height: 100%
+  .hero-words
+    width: 100%
     z-index: 1
-    position: relative
+    position: absolute
+    top: 0
+    margin-top: $menu-height
   img
     display: block
-    position: absolute
+    position: relative
     top: 0
     width: 100%
     z-index: 0

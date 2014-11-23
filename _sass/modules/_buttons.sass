@@ -34,7 +34,8 @@ button, a.btn, input.btn
 
 a.btn-round
   border-radius: 1.5em
-
+input.btn
+  padding: 0.6em 1em 0.8em
 
 a.btn-circle
   font-size: 24px
@@ -102,8 +103,10 @@ input[type="submit"].btn
 .button-group
   a
     margin-bottom: .75em
-a.btn-red, a:link.btn-red, a:visited.btn-red
+input[type="submit"].btn-red, a.btn-red, a:link.btn-red, a:visited.btn-red
   background: $red
   color: white
+  border: none
+
   &:hover
     background: darken($red, 15%)
