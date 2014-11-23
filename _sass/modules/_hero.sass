@@ -9,4 +9,17 @@
 
 .hero
   background: $green
-  min-height: 500px
+  min-height: 600px
+  max-height: 700px
+  overflow: hidden
+.hero-container
+  position: relative
+  .row
+    z-index: 1
+    position: relative
+  img
+    display: block
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 0
