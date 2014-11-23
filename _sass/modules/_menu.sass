@@ -1,9 +1,9 @@
 .header
-  // padding-top: 1.5em
+  padding-top: 1em
   position: fixed
   width: 100%
   top: 0
-  z-index: 3
+  z-index: 10
   @include transition(all .2s ease-in)
   .logo-name
     @include transform(translateY(0px))
@@ -14,21 +14,21 @@
     @include transition(all .2s ease-in)
     position: absolute
   &.is-active
-    background: white
-    border-bottom: 1px $med-gray solid
+    padding-top: 0
+    background: $green
+    // border-bottom: 1px $med-gray solid
     .logo-name
       @include transform(translateY(-100px))
     .logo-noname
-      @include transform(translateY(14px))
+      @include transform(translateY(10px))
     .menu
       a
-        color: $black
+        color: $light-white
         &.active
           color: white
           background: $green
       a:hover
-        background: $green
-        color: white
+        color: $green
 
 
 
@@ -44,3 +44,30 @@
   a:hover
     background: white
     color: $green
+.menu-control
+  color: white
+.mobile-menu
+  @include transform(translateX(-30em))
+  @include transition(all .2s ease-in)
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  background: $yellow
+  z-index: 8
+  padding-top: $menu-height
+  &.active-menu
+    @include transform(translateX(0))
+  ul
+    list-style: none
+    text-align: center
+    padding: 0
+    margin: 0
+    font-family: apercu-bold, helvetica, sans-serif
+    color: white
+    font-size: 36px
+    li a
+      display: block
+      padding: .5em 0
+      width: 100%

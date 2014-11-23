@@ -1,5 +1,7 @@
 $( document ).ready(function() {
-  
+  $('#menu_control').click(function(event) {
+      $('.mobile-menu').toggleClass('active-menu');
+  });
 });
 $(window).scroll(function(event) {
   $scrolled = $(window).scrollTop();
