@@ -1,15 +1,16 @@
 .hero
   height: 100%
   position: relative
-  overflow: hidden
-.hero-container, .page-header
+
+.hero-container, .page-header__home
   height: 100%
   position: relative
-
   .hero-words
     position: absolute
     z-index: 1
     top: 100px
+.hero-container .hero-words.hero-words-relative
+  position: relative
 .hero-text
   text-align: center
   h1
@@ -17,15 +18,16 @@
   p
     color: rgba(255,255,255,.8)
 @media all and (min-width: $break-medium)
+  .page-header__home
+    min-height: 550px
   .hero-text
     @include span-columns(10 16)
     @include shift(3 16)
 
   .hero
-    background: $green
-    // min-height: 600px
-    // max-height: 700px
     overflow: hidden
+    position: relative
+  .hero-container .hero-words.hero-words-relative
     position: relative
 
   .hero-container

@@ -10,27 +10,37 @@
     @include transition(all .2s ease-in)
     position: absolute
   .logo-noname
-    @include transform(translateY(-50px))
+    @include transform(translateY(-60px))
     @include transition(all .2s ease-in)
     position: absolute
     width: 30px
   &.is-active
     padding-top: 0
     height: 50px
-    background: $green
-    // border-bottom: 1px $med-gray solid
+    background: white
+    border-bottom: 1px solid $med-gray
+    // &.features
+    //   background: $blue
+    // &.case-studies
+    //   background: $yellow
+    // &.about
+    //   background: $blue
+    // &.blog
+    //   background: $red
+
     .logo-name
       @include transform(translateY(-100px))
     .logo-noname
       @include transform(translateY(10px))
     .menu
       a
-        color: $light-white
-        &.active
-          color: white
-          background: $green
+        color: $dark-gray
       a:hover
-        color: $green
+        color: $light-white
+        background: $dark-gray
+      li.active a
+        color: $light-white !important
+        background: $green
 @media all and (min-width: $break-medium)
   .header.is-active
     height: auto
@@ -40,16 +50,16 @@
 
 .menu
   color: $light-white
+  li.active a
+    color: $dark-gray !important
+    background: white
   a
     padding: .5em .75em
     border-radius: 2px
     font-size: 14px
-    &.active
-      color: $green
-      background: white
   a:hover
     background: white
-    color: $green
+    color: $dark-gray
 .menu-control
   color: white
   padding: .85em
@@ -66,6 +76,14 @@
   left: 0
   right: 0
   background: $green
+  // &.features
+  //   background: $blue
+  // &.case-studies
+  //   background: $yellow
+  // &.about
+  //   background: $blue
+  // &.blog
+  //   background: $red
   z-index: 8
   padding-top: $menu-height
   &.active-menu
