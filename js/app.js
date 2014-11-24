@@ -10,7 +10,7 @@ $( document ).ready(function() {
 });
 $(window).scroll(function(event) {
   $scrolled = $(window).scrollTop();
-  if ($features.length > 0 && $scrolled > $featuresHeight-140){
+  if ($features.length > 0 && $scrolled > $featuresHeight-160){
     $('.features-menu-scroll').addClass('is-active');
   }
   else {
