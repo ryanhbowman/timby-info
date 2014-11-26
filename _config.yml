@@ -2,8 +2,8 @@
 title: Timby 
 email: ryan@circle.co.ke
 description: Timby
-# baseurl: "/timbyinfo" # the subpath of your site, e.g. /blog/
-# url: "http://54.74.229.54" # the base hostname & protocol for your site
+baseurl: "/timbyinfo/" # the subpath of your site, e.g. /blog/
+url: "http://54.74.229.54" # the base hostname & protocol for your site
 twitter_username: circlekenya
 github_username:  ryanhbowman
 
